@@ -1,0 +1,17 @@
+Synthesizing 7/10 solutions(Duplicates hidden)
+
+== == == =
+
+
+def LinearModel(thetas, X):
+    # normalize add bias term
+    X = (X - X.mean()) / X.std()
+    X = np.hstack((X, np.ones((X.shape[0], 1), dtype=X.dtype)))
+    return np.dot(X, thetas)
+
+
+== == == =
+
+
+def LinearModel(thetas, X):
+    return np.dot(X, thetas)
